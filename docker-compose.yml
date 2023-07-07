@@ -7,4 +7,4 @@ services:
     image: netwarloq/devops-for-programmers-project-74:latest
     volumes:
       - ./app:/app
-    command: bash -c 'sleep 3 && npm test'
+    command: npm test
