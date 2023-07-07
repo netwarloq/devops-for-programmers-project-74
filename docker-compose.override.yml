@@ -9,6 +9,12 @@ services:
     volumes:
       - ./app:/app
     command: bash -c 'sleep 5 && npm start'
+    environment:
+      DATABASE_NAME: postgres
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_PORT: 5432
+      DATABASE_HOST: db
 
   caddy:
     image: caddy:latest
