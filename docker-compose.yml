@@ -5,6 +5,4 @@ services:
       context: .
       dockerfile: Dockerfile.production
     image: netwarloq/devops-for-programmers-project-74:latest
-    volumes:
-      - ./app:/app
     command: npm test
