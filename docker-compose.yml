@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: netwarloq/devops-for-programmers-project-74:latest
+    volumes:
+      - ./app:/app
+    command: bash -c 'sleep 3 && npm test'
