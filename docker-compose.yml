@@ -3,7 +3,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.production
     image: netwarloq/devops-for-programmers-project-74:latest
     volumes:
       - ./app:/app
