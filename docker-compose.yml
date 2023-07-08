@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile.production
     image: netwarloq/devops-for-programmers-project-74:latest
-    command: npm test
+    command: bash -c 'sleep 5 && npm test'
     environment:
       DATABASE_NAME: postgres
       DATABASE_USERNAME: postgres
