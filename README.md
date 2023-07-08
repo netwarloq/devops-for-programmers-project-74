@@ -9,6 +9,11 @@ Image on DockerHub: netwarloq/devops-for-programmers-project-74
 * docker-compose 1.27.0+
 
 ## Commands
+Setup (npm ci)
+
+```bash
+make setup
+```
 
 Test
 
